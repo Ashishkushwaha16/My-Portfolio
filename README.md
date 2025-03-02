@@ -18,7 +18,7 @@
 
 📫 How to Reach Me:
 - Email: ashishkushwaha161202005@gmail.com
-- LinkedIn: Ashish Kushwaha (https://www.linkedin.com/in/ashishkushwaha16/)
+- LinkedIn: [Ashish Kushwaha](https://www.linkedin.com/in/ashishkushwaha16/)
 
 😄 Pronouns:
 - He/Him
