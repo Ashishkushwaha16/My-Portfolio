@@ -1,84 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashish Kushwaha - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Ashish Kushwaha</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+  <meta name="description" content="Professional portfolio of Ashish Kushwaha - Web Developer and Designer">
 </head>
+
 <body>
-
-<header>
-    <h1>Ashish Kushwaha</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Ashish Kushwaha, a third-year B.Tech computer science student with a passion for Web Development. I create elegant and efficient web solutions, always striving to enhance user experience.</p>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>C & C++</li>
-        <li>SQL</li>
-    </ul>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-        <h3>Project 1: Portfolio Website</h3>
-        <p>A professional personal website showcasing my skills and projects.</p>
-        <a href="#">View Project</a>
+  <header class="navbar" id="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <h2><span class="text-primary">Portfolio</span></h2>
+      </div>
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="mobile-menu-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </div>
-    <div class="project-card">
-        <h3>Project 2: E-commerce Website</h3>
-        <p>A responsive online store built with modern web technologies.</p>
-        <a href="#">View Project</a>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title fade-in">
+          <span class="text-primary">Developer.</span>
+          <span>Designer.</span>
+          <span class="text-primary">Creator.</span>
+        </h1>
+        <p class="hero-subtitle fade-in delay-300">
+          I build elegant, high-performance web applications with a focus on user experience and attention to detail.
+        </p>
+        <div class="hero-cta fade-in delay-500">
+          <a href="#about" class="primary-btn">Explore My Work</a>
+        </div>
+        <div class="scroll-indicator">
+          <a href="#about" class="scroll-down">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="section-container">
+        <h2 class="section-title">About Me</h2>
+        <div class="title-underline"></div>
+        <div class="about-content">
+          <div class="about-image">
+            <div class="image-placeholder animate-element">
+              <span>AK</span>
+              <div class="pulse-ring"></div>
+            </div>
+          </div>
+          <div class="about-text">
+            <h3 class="animate-element">Hello! I'm <span class="text-accent">Ashish Kushwaha</span></h3>
+            <p class="animate-element delay-200">
+              A passionate web developer with expertise in building modern, responsive applications.
+              I'm a third-year B.Tech computer science student with a strong foundation in web development
+              and a keen eye for design.
+            </p>
+            <p class="animate-element delay-400">
+              I create elegant and efficient web solutions, always striving to enhance the user experience.
+              My approach combines technical precision with creative problem-solving to deliver
+              projects that exceed expectations.
+            </p>
+            <div class="connect-link animate-element delay-600">
+              <a href="#contact" class="highlight-underline">Let's connect →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+      <div class="section-container">
+        <h2 class="section-title">Skills</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          My technical toolkit and areas of expertise that I bring to every project.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-category animate-element">
+            <h3 class="category-title">Frontend</h3>
+            <div class="skill-bars">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML & CSS</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">React</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">TypeScript</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" data-width="75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category animate-element delay-200">
+            <h3 class="category-title">Backend</h3>
+            <div class="skill-bars">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" data-width="70"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-percentage">65%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" data-width="65"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category animate-element delay-400">
+            <h3 class="category-title">Tools</h3>
+            <div class="skill-bars">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" data-width="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category animate-element delay-600">
+            <h3 class="category-title">Other</h3>
+            <div class="skill-bars">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">UI/UX Design</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" data-width="70"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C & C++</span>
+                  <span class="skill-percentage">65%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" data-width="65"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="section-container">
+        <h2 class="section-title">Projects</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Some of my recent work showcasing my skills and experience.
+        </p>
+        <div class="projects-grid">
+          <div class="project-card animate-element">
+            <div class="project-image">
+              <div class="code-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-description">A professional personal website showcasing my skills and projects.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card animate-element delay-200">
+            <div class="project-image">
+              <div class="code-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">E-commerce Website</h3>
+              <p class="project-description">A responsive online store built with modern web technologies.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card animate-element delay-400">
+            <div class="project-image">
+              <div class="code-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Analytics Dashboard</h3>
+              <p class="project-description">A data visualization dashboard for monitoring business metrics.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">D3.js</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card animate-element delay-600">
+            <div class="project-image">
+              <div class="code-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Task Manager</h3>
+              <p class="project-description">A productivity app to help users organize and track their tasks.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Redux</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="section-container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Have a project in mind or want to discuss an opportunity? I'd love to hear from you.
+        </p>
+        <div class="contact-content">
+          <div class="contact-info animate-element">
+            <h3>Get in Touch</h3>
+            <p>
+              Feel free to reach out through the contact form or connect with me on social media.
+              I'm always open to discussing new projects, creative ideas, or opportunities.
+            </p>
+            <div class="social-links">
+              <a href="mailto:example@example.com" class="social-icon" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+                aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+                aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-container animate-element delay-300">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your email">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                Send Message
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <p class="copyright">
+          © <span id="currentYear"></span> Ashish Kushwaha. All rights reserved.
+        </p>
+        <p class="made-with">
+          Made with
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#e94560"
+            stroke="#e94560" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+            </path>
+          </svg>
+          and passion
+        </p>
+        <a href="#home" class="back-to-top-link">
+          <span>Back to top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+        </a>
+      </div>
     </div>
-</section>
+  </footer>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>
-        <a href="mailto:ashishkushwaha161202005@gmail.com" target="_blank">
-            <i class="fas fa-envelope"></i>
-        </a>
-    </p>
-    <p>
-        <a href="https://www.linkedin.com/in/ashishkushwaha16/" target="_blank">
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+    <span class="tooltip">Back to top</span>
+  </button>
 
-            <i class="fab fa-linkedin"></i>
-        </a>
-    </p>
-    <p>
-        <a href="https://github.com/Ashishkushwaha16/My-Portfolio/" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-    </p>
-</section>
-
-
-<footer>
-    <p>&copy; 2024 Ashish Kushwaha. All rights reserved.</p>
-</footer>
-
-<div id="back-to-top" onclick="scrollToTop()">&#8679;</div>
-
-<script src="script.js"></script>
+  <script src="portfolio.js"></script>
 </body>
+
 </html>
